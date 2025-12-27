@@ -60,4 +60,3 @@ The API will be running at `http://127.0.0.1:8000/`.
 - `GET /api/places/search/` (Supports `query` for name match and `min_rating`)
 - `GET /api/places/<id>/` (Details with reviews sorted by current user first)
 
-*Note: You can import the included `postman_collection.json` to quickly test all endpoints.*
