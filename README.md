@@ -19,7 +19,6 @@ ALTER ROLE place_user SET client_encoding TO 'utf8';
 ALTER ROLE place_user SET default_transaction_isolation TO 'read committed';
 ALTER ROLE place_user SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE place_review_db TO place_user;
--- For PostgreSQL 15+
 GRANT ALL ON SCHEMA public TO place_user;
 ```
 
@@ -33,7 +32,7 @@ pip install -r requirements.txt
 # Apply migrations
 python manage.py migrate
 
-# Populate database with sample data (optional)
+# Populate database with sample data
 python manage.py populate_db
 
 # Start the server
